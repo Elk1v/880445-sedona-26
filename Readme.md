@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Matey Ilkiv](https://up.htmlacademy.ru/htmlcss/26/user/880445).
-* Наставник: `Неизвестно`.
+* Наставник: `Никита Рогатнев(https://htmlacademy.ru/profile/nikita_rogatnev)`.
 
 ---
 
