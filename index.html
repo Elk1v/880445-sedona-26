@@ -5,8 +5,175 @@
     <title>HTML Academy: Седона</title>
   </head>
   <body>
+	<header class="header">
+		<div class="logo">
+			<a href="index.html"><img src="https://via.placeholder.com/140x72" width="140" height="72" alt="Логотип"></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">Информация</a></li>
+				<li><a href="#">Фото и Видео</a></li>
+				<li><a href="#">Карта штата</a></li>
+				<li><a href="#">Гостиницы</a></li>
+			</ul>
+		</nav>
+	</header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+	<main>
+		<section class="intro">
+			<h1>Sedona</h1><!-- Скрыть в стилях -->
+
+			<img src="https://via.placeholder.com/459x353" width="459" height="353" alt="Приветствие">
+
+			<div class="polygon"></div>
+		</section>
+
+		<section class="sedona-description">
+					<h3>Описание Седоны</h3><!-- Скрыть в стилях -->
+						<p>Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!</p>
+						<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+				</section>
+
+		<section class="reasons-list">
+			<h2>Причины для посящения</h2><!-- Скрыть в стилях -->
+				<section class="reasons-1st-item">
+					<h3>Первая причина</h3><!-- Скрыть в стилях -->
+						<div class="reasons-1st-item-description">
+							<p>Настоящий городок </p>
+								<span>&#8212; &#8470;1 &#8212;</span>
+								<p>Седона &#8212; не аттракцион для туристов, там течёт своя жизнь </p>
+						</div>
+			
+						<div class="reasons-1st-item-img-mask-1">
+							<img src="https://via.placeholder.com/800x256" alt="Фотография мэрии с размытым фоном">
+						</div>
+				</section>	
+		
+				<section class="reasons-2nd-item">
+					<h3>Вторая причина</h3><!-- Скрыть в стилях -->
+						<div class="reasons-2nd-item-description">
+							<p>Там есть мост дьявола <span> &#8212; &#8470;2 &#8212;</span></p>
+								<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+						</div>
+
+						<div class="reasons-2nd-item-img-mask-2">
+							<img src="https://via.placeholder.com/800x256" alt="Фотография моста дьявола">
+						</div>
+				</section>
+			
+				<section class="reasons-3кd-item">
+					<h3>Третья причина</h3><!-- Скрыть в стилях -->
+						<div class="reasons-3rd-item-description">
+								<span>&#8212; &#8470;3 &#8212;</span>
+								<p>Небольшая площадь</p>
+								<p>Все достопримечательности находятся очень близко</p>
+						</div>
+				</section>	
+
+				<section class="reasons-4th-item">
+					<h3>Четвёртая причина</h3><!-- Скрыть в стилях -->
+						<div class="reasons-4th-item-description">
+								<span>&#8212; &#8470;4 &#8212;</span>
+								<p>Красивая дорогая</p>
+								<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+						</div>
+				</section>
+			
+				<section class="reasons-5th-item">
+					<h3>Пятая причина</h3><!-- Скрыть в стилях -->
+						<div class="reasons-5th-item-description">
+								<span>&#8212; &#8470;5 &#8212;</span>
+								<p>Мало туристов</p>
+								<p>Большинство едет в Гранд Каньон и толптится там</p>
+						</div>
+				</section>
+
+				<section class="reasons-facilities">
+					<h3>Рекомендации</h3><!-- Скрыть в стилях -->
+
+					<ul class="reasons-facilities-items">
+						<li class="reasons-facilities-item">
+							<h4>Жильё</h4>
+								<img src="https://via.placeholder.com/75x72" width="75" height="72" alt="Иконка жилья">
+								<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+						</li>
+
+						<li class="reasons-facilities-item">
+							<h4>Еда</h4>
+									<img src="https://via.placeholder.com/75x72" width="75" height="72" alt="Иконка 	еды">
+									<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+						</li>
+
+						<li class="reasons-facilities-item">
+							<h4>Сувениры</h4>
+								<img src="https://via.placeholder.com/75x72" width="75" height="72" alt="Иконка 	сувениров">
+								<p>Не только китайского, но и местного производства!</p>
+						</li>	
+					</ul>	
+			</section>
+
+			<section class="motel-search-form-description">
+				<h3>Описание формы</h3><!-- Скрыть в стилях -->
+					<p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+						<section class="motel-search-form">
+							<h4>Форма гостиниц</h4><!-- Скрыть в стилях -->
+								<h5>Поиск гостиницы в Седоне</h5>
+									<form method="POST" action="http://echo.htmlacademy.ru">
+										<ul class="form-items-list">
+											<li>
+												Дата заезда:<input type="date" name="check-in-date">
+											</li>
+											
+											<li>
+												Дата выезда:<input type="date" name="check-out-date">
+											</li>
+
+											<li>
+												<input type="button" name="decrement-btn" value="-">
+												Взрослые:<input type="number" name="adults-number">
+												<input type="button" name="increment-btn" value="+">
+											</li>
+
+											<li>
+												<input type="button" name="decrement-btn" value="-">
+												Дети:<input type="number" name="kids-number">
+												<input type="button" name="increment-btn" value="+">
+												
+											</li>
+
+											<li>
+												<input type="submit" name="submit" value="Найти">
+											</li>
+
+										</ul>
+									</form>
+						</section>
+			</section>
+			
+			<section class="map-field">
+				<h4>Карта</h4><!-- Скрыть в стилях -->
+					<div class="map-rectangle">
+						<img src="https://via.placeholder.com/1718x748" width="1718" height="748" alt="Карта">
+					</div>
+			</section>
+			
+		</section>
+	</main>
+    
+    <footer class="footer">
+    	<h2>Футер</h2>
+    		<p>#VisitSedona</p>
+    		<p>Website by</p>
+    		<div class="logo">
+    			<img src="https://via.placeholder.com/115x41" width="115" height="41" alt="Логотип подвала">
+    		</div>
+			
+			<div class="links-wrapper">
+    			<a class="vk-page" href="#">VK</a>
+    			<a class="fb-page" href="#">FB</a>
+    			<a class="yt-channel" href="#">Youtube</a>
+    		</div>
+    </footer>
 
   </body>
 </html>
