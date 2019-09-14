@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Гостиницы</title>
+
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header class="header">
+		<div class="logo">
+			<a href=""><img src="https://via.placeholder.com/140x72" width="140" height="72" alt="Логотип"></a>
+		</div>
+		<nav>
+			<ul>
+				<li><a href="#">Информация</a></li>
+				<li><a href="#">Фото и Видео</a></li>
+				<li><a href="#">Карта штата</a></li>
+				<li><a class="catalog-active" href="catalog.html">Гостиницы</a></li>
+			</ul>
+		</nav>
+	</header>
+
+	<main>
+		<h1 class="visually-hidden">Бронирование гостиницы</h1>
+
+			<section class="catalog-searchform">
+
+				<h2 class="visually-hidden">Форма бронирования</h2>
+
+					<form class="catalog-searchform" method="POST" action="http://echo.htmlacademy.ru" >
+
+						<div class="catalog-searchform-fields-wrapper">
+
+							<h2 class="catalog-searchform-title">Инфраструктура:</h2>
+						
+								<input type="checkbox" class="catalog-searchform-checkbox-field" id="catalog-checkbox-1" name="catalog-checkbox">
+
+								<input type="checkbox" class="catalog-searchform-checkbox-field" id="catalog-checkbox-2" name="catalog-checkbox">
+
+								<input type="checkbox" class="catalog-searchform-checkbox-field" id="catalog-checkbox-3" name="catalog-checkbox">
+						</div>
+
+						<div class="catalog-searchform-fields-wrapper">
+
+							<h2 class="catalog-searchform-title">Тип жилья:</h2>
+
+								<input type="checkbox" class="catalog-searchform-checkbox-field" id="catalog-checkbox-4" name="catalog-searchform-checkbox">
+
+								<input type="checkbox" class="catalog-searchform-checkbox-field" id="catalog-checkbox-5" name="catalog-serchform-checkbox">
+
+								<input type="checkbox" class="catalog-searchform-checkbox-field" id="catalog-checkbox-6" name="catalog-searchform-checkbox-">
+						</div>
+
+						<div class="catalog-searchform-fields-wrapper">
+
+							<h2 class="catalog-searchform-title">Стоимость в сутки(р)</h2>
+
+									<input type="number" class="catalog-searchform-number-field" id="catalog-number-1" name="catalog-searchform-number" value="0" min="0" max="4000">
+
+									<input type="number" class="catalog-searchform-number-field" id="catalog-number-2" name="catalog-searchform-number" value="3000" min="0" max="4000">
+
+									<input type="range" class="catalog-search-form-range-field" id="catalog-range" name="catalog-searchform-range" min="0" max="4000" value="3000"><!--Диапазон -->
+
+									<input type="button" class="catalog-searchform-btn-field" name="catalog-searchform-btn" id="catalog-btn" value="Показать">
+
+						</div>
+
+					</form>
+			</section>
+
+			<section class="hotel-found-elements"><!-- СПИСОК НАЙДЕННЫХ ГОСТИНИЦ -->
+				<h2 class="visually-hidden">Список найденных гостиниц</h2> 
+					<h3 class="hotel-found-title">Найдено:</h3>
+						<span class="hotel-found-number">3</span><!--КОЛИЧЕСТВО НАЙДЕННЫХ ОТЕЛЕЙ -->
+							<ul class="hotel-found-sort-list">
+								<li class="hotel-found-sort-item"><a href="#">По цене</a></li>
+								<li class="hotel-found-sort-item"><a href="#">По типу</a></li>
+								<li class="hotel-found-sort-item"><a href="#">По рейтингу</a></li>
+							</ul>
+
+							<ul class="hotel-found-sort-arrows">
+								<li class="hotel-found-sort-arrow"><a href="#"><span class="arrow-icon"></span></a></li>
+								<li class="hotel-found-sort-arrow"><a href="#"><span class="arrow-icon"></span></a></li>
+							</ul>
+			</section>
+
+			<section class="hotel-found-elements-list-wrapper">
+				<h2 class="visually-hidden">Найденные гостиницы</h2>
+
+					<section class="hotel-found-elements-item">
+						<h3 class="elements-item-title">Amara Resort & Spa</h3>
+							<div class="elements-item-image"></div>
+								<p class="elements-hotel-type">Гостиница</p>
+								<p class="elements-hotel-price">От 4000 Р.</p>
+									<a class="hotel-details" href="#">Подробнее</a>
+									<a class="book-hotel-link" href="#">Забронировать</a>
+										<div class="rate-wrapper">
+											<span class="rate-stars">&star;</span>
+											<span class="rate-stars">&star;</span>
+											<span class="rate-stars">&star;</span>
+											<span class="rate-stars">&star;</span>
+											<span class="rate-stars">&star;</span>
+
+											<p class="rate">Рейтннг: 8.5</p>
+										</div>
+
+					</section>
+
+					<section class="hotel-found-elements-item">
+						<h3 class="elements-item-title">Desert Auail Inn</h3>
+							<div class="elements-item-image"></div>
+								<p class="elements-hotel-type">Мотель</p>
+								<p class="elements-hotel-price">От 3000 Р.</p>
+									<a class="hotel-details" href="#">Подробнее</a>
+									<a class="book-hotel-link" href="#">Забронировать</a>
+										<div class="rate-wrapper">
+											<span class="rate-stars">&star;</span>
+											<span class="rate-stars">&star;</span>
+											<span class="rate-stars">&star;</span>
+												<p class="rate">Рейтннг: 8.9</p>
+
+										</div>
+
+									
+					</section>
+
+					<section class="hotel-found-elements-item">
+						<h3 class="elements-item-title">Villas At Poco Diablo</h3>
+							<div class="elements-item-image"></div>
+								<p class="elements-hotel-type">Апартаменты</p>
+								<p class="elements-hotel-price">От 2000 Р.</p>
+									<a class="hotel-details" href="#">Подробнее</a>
+									<a class="book-hotel-link" href="#">Забронировать</a>	
+										<div class="rate-wrapper">
+											<span class="rate-stars">&star;</span>
+											<span class="rate-stars">&star;</span>
+												<p class="rate">Рейтннг: 9.2</p>
+										</div>
+					</section>
+
+
+
+			</section>
+				
+
+	</main>
+	
+	<footer class="footer">
+    	<div class="copyright-wrapper">
+			<div>
+				<a href="№">>#VisitSedona</a>
+			</div>  			
+    		
+    		<div class="logo">
+    			<img src="https://via.placeholder.com/115x41" width="115" height="41" alt="Логотип подвала">
+    		</div>
+				<ul class="links-list">
+    				<li class="links-item">
+    					<a class="vk-page" href="#">VK</a>
+    				</li>
+    				<li class="links-item">
+    					<a class="fb-page" href="#">FB</a>
+    				</li>
+    				<li class="links-item">
+    					<a class="yt-channel" href="#">Youtube</a>
+    				</li>
+    			</ul>
+			<div class="website-creator">
+				<p>Website by</p>
+			</div>
+		</div>
+    </footer>
+
+</body>
+</html>
