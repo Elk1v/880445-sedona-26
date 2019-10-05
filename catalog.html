@@ -12,11 +12,11 @@
 			<a href=""><img src="https://via.placeholder.com/140x72" width="140" height="72" alt="Логотип"></a>
 		</div>
 		<nav>
-			<ul>
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Фото и Видео</a></li>
-				<li><a href="#">Карта штата</a></li>
-				<li><a class="catalog-active" href="catalog.html">Гостиницы</a></li>
+			<ul class="nav-items-list">
+				<li class="nav-item"><a href="#">Информация</a></li>
+				<li class="nav-item"><a href="#">Фото и Видео</a></li>
+				<li class="nav-item"><a href="#">Карта штата</a></li>
+				<li class="nav-item nav-active"><a href="catalog.html">Гостиницы</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -32,29 +32,45 @@
 
 						<div class="catalog-searchform-fields-wrapper">
 
-							<h2 class="catalog-searchform-title">Инфраструктура:</h2>
-						
-								<input type="checkbox" class="catalog-searchform-checkbox-field" id="catalog-checkbox-1" name="catalog-checkbox">
-
-								<input type="checkbox" class="catalog-searchform-checkbox-field" id="catalog-checkbox-2" name="catalog-checkbox">
-
-								<input type="checkbox" class="catalog-searchform-checkbox-field" id="catalog-checkbox-3" name="catalog-checkbox">
+							<h3 class="catalog-searchform-title">Инфраструктура:</h3>
+								<label>
+									<input type="checkbox" class="catalog-searchform-checkbox-field" id="catalog-checkbox-1" name="catalog-checkbox" value="Бассейн">
+									<p class="checkvox-field-text">Бассейн</p>
+								</label>
+								
+								<label>
+									<input type="checkbox" class="catalog-searchform-checkbox-field" id="catalog-checkbox-2" name="catalog-checkbox">
+									<p class="checkvox-field-text">Парковка</p>
+								</label>
+								
+								<label>
+									<input type="checkbox" class="catalog-searchform-checkbox-field" id="catalog-checkbox-3" name="catalog-checkbox">
+									<p class="checkvox-field-text">Wi-Fi</p>
+								</label>
 						</div>
 
 						<div class="catalog-searchform-fields-wrapper">
 
-							<h2 class="catalog-searchform-title">Тип жилья:</h2>
+							<h3 class="catalog-searchform-title">Тип жилья:</h3>
+								<label>
+									<input type="checkbox" class="catalog-searchform-checkbox-field" id="catalog-checkbox-4" name="catalog-searchform-checkbox">
+									<p class="checkbox-field-text">Гостиница</p>
+								</label>
 
-								<input type="checkbox" class="catalog-searchform-checkbox-field" id="catalog-checkbox-4" name="catalog-searchform-checkbox">
+								<label>
+									<input type="checkbox" class="catalog-searchform-checkbox-field" id="catalog-checkbox-5" name="catalog-serchform-checkbox">
+									<p class="checkbox-field-text">Мотель</p>
+								</label>
 
-								<input type="checkbox" class="catalog-searchform-checkbox-field" id="catalog-checkbox-5" name="catalog-serchform-checkbox">
-
-								<input type="checkbox" class="catalog-searchform-checkbox-field" id="catalog-checkbox-6" name="catalog-searchform-checkbox-">
+								<label>
+									<input type="checkbox" class="catalog-searchform-checkbox-field" id="catalog-checkbox-6" name="catalog-searchform-checkbox-">
+									<p class="checkbox-field-text">Апартаменты</p>
+								</label>
 						</div>
 
 						<div class="catalog-searchform-fields-wrapper">
 
-							<h2 class="catalog-searchform-title">Стоимость в сутки(р)</h2>
+							<h3 class="catalog-searchform-title">Стоимость в сутки(р)</h3>
 
 									<input type="number" class="catalog-searchform-number-field" id="catalog-number-1" name="catalog-searchform-number" value="0" min="0" max="4000">
 
@@ -62,7 +78,7 @@
 
 									<input type="range" class="catalog-search-form-range-field" id="catalog-range" name="catalog-searchform-range" min="0" max="4000" value="3000"><!--Диапазон -->
 
-									<input type="button" class="catalog-searchform-btn-field" name="catalog-searchform-btn" id="catalog-btn" value="Показать">
+									<button type="submit">Показать</button>
 
 						</div>
 
@@ -73,16 +89,17 @@
 				<h2 class="visually-hidden">Список найденных гостиниц</h2> 
 					<h3 class="hotel-found-title">Найдено:</h3>
 						<span class="hotel-found-number">3</span><!--КОЛИЧЕСТВО НАЙДЕННЫХ ОТЕЛЕЙ -->
-							<ul class="hotel-found-sort-list">
-								<li class="hotel-found-sort-item"><a href="#">По цене</a></li>
-								<li class="hotel-found-sort-item"><a href="#">По типу</a></li>
-								<li class="hotel-found-sort-item"><a href="#">По рейтингу</a></li>
-							</ul>
+							<p class="hotel-found-sort-text">Сортировка</p>
+								<ul class="hotel-found-sort-list-items">
+									<li class="hotel-found-sort-item"><a href="#">По цене</a></li>
+									<li class="hotel-found-sort-item"><a href="#">По типу</a></li>
+									<li class="hotel-found-sort-item"><a href="#">По рейтингу</a></li>
+								</ul>
 
-							<ul class="hotel-found-sort-arrows">
-								<li class="hotel-found-sort-arrow"><a href="#"><span class="arrow-icon"></span></a></li>
-								<li class="hotel-found-sort-arrow"><a href="#"><span class="arrow-icon"></span></a></li>
-							</ul>
+								<ul class="hotel-found-sort-arrows">
+									<li class="hotel-found-sort-arrow"><a href="#"><span class="arrow-icon"></span></a></li>
+									<li class="hotel-found-sort-arrow"><a href="#"><span class="arrow-icon"></span></a></li>
+								</ul>
 			</section>
 
 			<section class="hotel-found-elements-list-wrapper">
@@ -90,7 +107,7 @@
 
 					<section class="hotel-found-elements-item">
 						<h3 class="elements-item-title">Amara Resort & Spa</h3>
-							<div class="elements-item-image"></div>
+							<img class="elements-item-img" src="img/hotels-img/anara_resort.jpg" width="135" height="90"alt="Фотография гостиницы Amara REsort & Spa">
 								<p class="elements-hotel-type">Гостиница</p>
 								<p class="elements-hotel-price">От 4000 Р.</p>
 									<a class="hotel-details" href="#">Подробнее</a>
@@ -109,7 +126,7 @@
 
 					<section class="hotel-found-elements-item">
 						<h3 class="elements-item-title">Desert Auail Inn</h3>
-							<div class="elements-item-image"></div>
+							<img class="elements-item-img" src="img/hotels-img/desert_quail_inn.jpg" width="135" height="90" alt="Фотография мотеля Desert Auail Inn">
 								<p class="elements-hotel-type">Мотель</p>
 								<p class="elements-hotel-price">От 3000 Р.</p>
 									<a class="hotel-details" href="#">Подробнее</a>
@@ -120,14 +137,12 @@
 											<span class="rate-stars">&star;</span>
 												<p class="rate">Рейтннг: 8.9</p>
 
-										</div>
-
-									
+										</div>								
 					</section>
 
 					<section class="hotel-found-elements-item">
 						<h3 class="elements-item-title">Villas At Poco Diablo</h3>
-							<div class="elements-item-image"></div>
+							<img class="elements-item-img" src="img/hotels-img/villas_at_poco.jpg" width="135" height="90" alt="Фотография апартаментов Villas at Poco Diablo">
 								<p class="elements-hotel-type">Апартаменты</p>
 								<p class="elements-hotel-price">От 2000 Р.</p>
 									<a class="hotel-details" href="#">Подробнее</a>

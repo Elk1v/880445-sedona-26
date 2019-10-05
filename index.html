@@ -8,172 +8,179 @@
   <body>
 	<header class="header">
 		<div class="logo">
-			<a href="index.html"><img src="https://via.placeholder.com/140x72" width="140" height="72" alt="Логотип"></a>
+			<a href=""><img src="https://via.placeholder.com/140x72" width="140" height="72" alt="Логотип"></a><!--В будущем SVG -->
 		</div>
 		<nav>
-			<ul>
-				<li><a href="#">Информация</a></li>
-				<li><a href="#">Фото и Видео</a></li>
-				<li><a href="#">Карта штата</a></li>
-				<li><a href="#">Гостиницы</a></li>
+			<ul class="nav-items-list">
+				<li class="nav-item"><a href="#">Информация</a></li>
+				<li class="nav-item"><a href="#">Фото и Видео</a></li>
+				<li class="nav-item"><a href="#">Карта штата</a></li>
+				<li class="nav-item"><a href="catalog.html">Гостиницы</a></li>
 			</ul>
 		</nav>
 	</header>
 
 	<main>
+		<h1 class="visually-hidden">Sedona</h1><!-- Скрыть в стилях -->
+		
 		<section class="intro">
-			<h1>Sedona</h1><!-- Скрыть в стилях -->
-
-			<img src="https://via.placeholder.com/459x353" width="459" height="353" alt="Приветствие">
-
-			<div class="polygon"></div>
+			<img src="img/welcome.png" alt=" Надпись Приветствия">
+			<div class="intro-polygon"></div>
 		</section>
 
 		<section class="sedona-description">
-					<h3>Описание Седоны</h3><!-- Скрыть в стилях -->
-						<p>Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!</p>
-						<p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-				</section>
+					<h3 class="visually-hidden">Описание Седоны</h3><!-- Скрыть в стилях -->
+						<h4 class="sedona-description-title">Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!</h4>
+							<p class="sedona-description-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+		</section>
 
 		<section class="reasons-list">
-			<h2>Причины для посящения</h2><!-- Скрыть в стилях -->
-				<section class="reasons-1st-item">
-					<h3>Первая причина</h3><!-- Скрыть в стилях -->
-						<div class="reasons-1st-item-description">
-							<p>Настоящий городок </p>
-								<span>&#8212; &#8470;1 &#8212;</span>
-								<p>Седона &#8212; не аттракцион для туристов, там течёт своя жизнь </p>
+			<h2 class="visually-hidden">Причины для посящения</h2><!-- Скрыть в стилях -->
+				<section class="reasons-item">
+					<h3 class="visually-hidden">Первая причина</h3><!-- Скрыть в стилях -->
+						<div class="reasons-description">
+								<span class="reasons-description-number">&#8212; &#8470;1 &#8212;</span>
+									<h4 class="reasons-decription-title">Настоящий городок</h4>
+										<p class="reasons-description-text">Седона &#8212; не аттракцион для туристов, там течёт своя жизнь </p>
 						</div>
 			
-						<div class="reasons-1st-item-img-mask-1">
-							<img src="https://via.placeholder.com/800x256" alt="Фотография мэрии с размытым фоном">
+						<div class="reasons-image">
+							<img src="img/city_hl.jpg" alt="Фотография мэрии с размытым фоном">
 						</div>
 				</section>	
 		
-				<section class="reasons-2nd-item">
-					<h3>Вторая причина</h3><!-- Скрыть в стилях -->
-						<div class="reasons-2nd-item-description">
-							<p>Там есть мост дьявола <span> &#8212; &#8470;2 &#8212;</span></p>
-								<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+				<section class="reasons-item">
+					<h3 class="visually-hidden">Вторая причина</h3><!-- Скрыть в стилях -->
+						<div class="reasons-description">
+							<h4 class="reasons-decription-title">Там есть мост дьявола</h4>
+								<span class="reasons-description-number">&#8212; &#8470;2 &#8212;</span>
+								<p class="reasons-description-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
 						</div>
 
-						<div class="reasons-2nd-item-img-mask-2">
-							<img src="https://via.placeholder.com/800x256" alt="Фотография моста дьявола">
+						<div class="reasons-image">
+							<img src="img/devil_brdg.jpg" alt="Фотография моста дьявола">
 						</div>
 				</section>
 			
-				<section class="reasons-3кd-item">
-					<h3>Третья причина</h3><!-- Скрыть в стилях -->
-						<div class="reasons-3rd-item-description">
-								<span>&#8212; &#8470;3 &#8212;</span>
-								<p>Небольшая площадь</p>
-								<p>Все достопримечательности находятся очень близко</p>
+				<section class="reasons-item">
+					<h3 class="visually-hidden">Третья причина</h3><!-- Скрыть в стилях -->
+						<div class="reasons-description">
+							<h4 class="reasons-decription-title">Небольшая площадь</h4>
+								<span class="reasons-description-number">&#8212; &#8470;3 &#8212;</span>
+								<p class="reasons-description-text">Все достопримечательности находятся очень близко</p>
 						</div>
 				</section>	
 
-				<section class="reasons-4th-item">
-					<h3>Четвёртая причина</h3><!-- Скрыть в стилях -->
-						<div class="reasons-4th-item-description">
-								<span>&#8212; &#8470;4 &#8212;</span>
-								<p>Красивая дорогая</p>
-								<p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+				<section class="reasons-item">
+					<h3 class="visually-hidden">Четвёртая причина</h3><!-- Скрыть в стилях -->
+						<div class="reasons-description">
+								<h4 class="reasons-decription-title">Красивая дорога</h4>
+									<span class="reasons-description-number">&#8212; &#8470;4 &#8212;</span>
+									<p class="reasons-description-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
 						</div>
 				</section>
 			
-				<section class="reasons-5th-item">
-					<h3>Пятая причина</h3><!-- Скрыть в стилях -->
-						<div class="reasons-5th-item-description">
-								<span>&#8212; &#8470;5 &#8212;</span>
-								<p>Мало туристов</p>
-								<p>Большинство едет в Гранд Каньон и толптится там</p>
+				<section class="reasons-item">
+					<h3 class="visually-hidden">Пятая причина</h3><!-- Скрыть в стилях -->
+						<div class="reasons-description">
+								<h4 class="reasons-decription-title">Мало туристов</h4>
+									<span class="reasons-description-number">&#8212; &#8470;5 &#8212;</span>
+									<p class="reasons-description-text">Большинство едет в Гранд Каньон и толптится там</p>
 						</div>
 				</section>
 
-				<section class="reasons-facilities">
-					<h3>Рекомендации</h3><!-- Скрыть в стилях -->
-
-					<ul class="reasons-facilities-items">
-						<li class="reasons-facilities-item">
+				<section class="advantages">
+					<h3 class="visually-hidden">Рекомендации</h3><!-- Скрыть в стилях -->
+						<div class="advantages-item">
 							<h4>Жильё</h4>
-								<img src="https://via.placeholder.com/75x72" width="75" height="72" alt="Иконка жилья">
 								<p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
-						</li>
+						</div>
 
-						<li class="reasons-facilities-item">
+						<div class="advantages-item">
 							<h4>Еда</h4>
-									<img src="https://via.placeholder.com/75x72" width="75" height="72" alt="Иконка 	еды">
-									<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-						</li>
+								<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+						</div>
 
-						<li class="reasons-facilities-item">
+						<div class="advantages-item">
 							<h4>Сувениры</h4>
-								<img src="https://via.placeholder.com/75x72" width="75" height="72" alt="Иконка 	сувениров">
 								<p>Не только китайского, но и местного производства!</p>
-						</li>	
-					</ul>	
+						</div>
+						
 			</section>
-
+		</section>
 			<section class="motel-search-form-description">
-				<h3>Описание формы</h3><!-- Скрыть в стилях -->
-					<p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+				<h3 class="visually-hidden">Описание формы</h3><!-- Скрыть в стилях -->
+					<p class="motel-search-form-data-choice">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне </p>
 						<section class="motel-search-form">
-							<h4>Форма гостиниц</h4><!-- Скрыть в стилях -->
-								<h5>Поиск гостиницы в Седоне</h5>
+							<h4 class="visually-hidden">Форма гостиниц</h4><!-- Скрыть в стилях -->
+								<a href="catalog.html">Поиск гостиницы в Седоне</a>
 									<form method="POST" action="http://echo.htmlacademy.ru">
-										<ul class="form-items-list">
-											<li>
-												Дата заезда:<input type="date" name="check-in-date">
-											</li>
-											
-											<li>
-												Дата выезда:<input type="date" name="check-out-date">
-											</li>
+										<fieldset class="visually-hidden">
+											<legend class="visually-hidden">Бронирование</legend>
+												<p>
+													<label for="in-date">Дата заезда:</label>
+													<input id="in-date" type="date" name="check-in-date" >
+												</p>
 
-											<li>
-												<input type="button" name="decrement-btn" value="-">
-												Взрослые:<input type="number" name="adults-number">
-												<input type="button" name="increment-btn" value="+">
-											</li>
+												<p>
+													<label for="out-date">Дата выезда:</label>
+													<input id="out-date" type="date" name="check-out-date" >
+												</p>
 
-											<li>
-												<input type="button" name="decrement-btn" value="-">
-												Дети:<input type="number" name="kids-number">
-												<input type="button" name="increment-btn" value="+">
+												<p>
+													<button type="button" name="decrement-btn" aria-label="Уменьшить на единичку количество 	взрослых">-</button>
 												
-											</li>
+													Взрослые:<input id="adults" type="number" name="adults-number">
+											
+													<button type="button" name="increment-btn" aria-label="Увеличить на единичку количество 	взрослых">+</button>
+												</p>
 
-											<li>
-												<input type="submit" name="submit" value="Найти">
-											</li>
-
-										</ul>
+												<p>
+													<button type="button" name="decrement-btn" aria-label="Уменьшить на единичку количество детей">-</button>
+													
+													Дети:<input id ="kids" type="number" name="kids-number">
+											
+													<button type="button" name="increment-btn" aria-label="Увеличить на единичку количество детей">+</button>
+												</p>
+													<button type="submit">Найти</button>
+												
+											
+										</fieldset>
+												
 									</form>
 						</section>
 			</section>
 			
 			<section class="map-field">
-				<h4>Карта</h4><!-- Скрыть в стилях -->
-					<div class="map-rectangle">
-						<img src="https://via.placeholder.com/1718x748" width="1718" height="748" alt="Карта">
-					</div>
+				<h4 class="visually-hidden">Карта</h4><!-- Скрыть в стилях -->
+					<img class="map-field-image" src="img/map.jpg" width="1718" height="748" alt="Карта">
 			</section>
-			
-		</section>
 	</main>
     
     <footer class="footer">
-    	<h2>Футер</h2>
-    		<p>#VisitSedona</p>
-    		<p>Website by</p>
+    	<div class="copyright-wrapper">
+			<div>
+				<a href="">>#VisitSedona</a>
+			</div>  			
+    		
     		<div class="logo">
     			<img src="https://via.placeholder.com/115x41" width="115" height="41" alt="Логотип подвала">
     		</div>
-			
-			<div class="links-wrapper">
-    			<a class="vk-page" href="#">VK</a>
-    			<a class="fb-page" href="#">FB</a>
-    			<a class="yt-channel" href="#">Youtube</a>
-    		</div>
+				<ul class="links-list">
+    				<li class="links-item">
+    					<a class="vk-page" href="#">VK</a>
+    				</li>
+    				<li class="links-item">
+    					<a class="fb-page" href="#">FB</a>
+    				</li>
+    				<li class="links-item">
+    					<a class="yt-channel" href="#">Youtube</a>
+    				</li>
+    			</ul>
+			<div class="website-creator">
+				<p>Website by</p>
+			</div>
+		</div>
     </footer>
 	
 	<script src="js/script.js"></script>
