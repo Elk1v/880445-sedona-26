@@ -4,17 +4,17 @@
 <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
     <header class="header">
         <div class="logo">
-            <a><img src="https://via.placeholder.com/140x72" width="140" height="72" alt="Логотип"></a>
-            <!--В будущем сделаю SVG -->
+            <a><img src="img/logo-image.png" width="140" height="72" alt="Логотип"></a>
         </div>
-        <nav>
-            <ul class="nav-items-list">
+        <nav class="nav">
+            <ul class="nav-items">
                 <li class="nav-item"><a href="#">Информация</a></li>
                 <li class="nav-item"><a href="#">Фото и Видео</a></li>
                 <li class="nav-item"><a href="#">Карта штата</a></li>
@@ -23,7 +23,7 @@
         </nav>
     </header>
 
-    <main>
+    <main class="main">
         <h1 class="visually-hidden">Sedona</h1>
         <!-- Скрыть в стилях -->
 
@@ -33,21 +33,22 @@
 
         <section class="sedona-description">
             <h3 class="visually-hidden">Описание Седоны</h3>
-            <h4 class="sedona-description-title">Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!</h4>
-            <p class="sedona-description-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+            <h4 class="description-title">Седона &#8212; небольшой городок в Аризоне, заслуживающий большего!</h4>
+            <p class="description-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
         </section>
         <h2 class="visually-hidden">Причины для посящения</h2>
-        <section class="reasons-item">
+
+        <section class="primary-reason">
 
             <h3 class="visually-hidden">Первая причина</h3>
 
-            <div class="reasons-description">
-                <span class="reasons-description-number">&#8212; &#8470;1 &#8212;</span>
-                <h4 class="reasons-decription-title">Настоящий городок</h4>
-                <p class="reasons-description-text">Седона &#8212; не аттракцион для туристов, там течёт своя жизнь </p>
+            <div class="reason-description">
+                <h4 class="reason-title">Настоящий городок</h4>
+                <span class="reason-number">&#8212; &#8470;1 &#8212;</span>
+                <p class="reason-text">Седона &#8212; не аттракцион для туристов, там течёт своя жизнь </p>
             </div>
 
-            <div class="reasons-image">
+            <div class="reason-image">
                 <img src="img/city_hl.jpg" alt="Фотография мэрии с размытым фоном">
             </div>
         </section>
@@ -72,91 +73,94 @@
 
         </section>
 
-        <section class="reasons-item">
+        <section class="primary-reason">
             <h3 class="visually-hidden">Вторая причина</h3>
             <!-- Скрыть в стилях -->
-            <div class="reasons-description">
-                <h4 class="reasons-decription-title">Там есть мост дьявола</h4>
-                <span class="reasons-description-number">&#8212; &#8470;2 &#8212;</span>
-                <p class="reasons-description-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <div class="reason-description">
+                <h4 class="reason-title">Там есть мост дьявола</h4>
+                <span class="reason-number">&#8212; &#8470;2 &#8212;</span>
+                <p class="reason-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
 
-            <div class="reasons-image">
+            <div class="reason-image">
                 <img src="img/devil_brdg.jpg" alt="Фотография моста дьявола">
             </div>
         </section>
 
-        <section class="reasons-item">
-            <h3 class="visually-hidden">Третья причина</h3>
-            <!-- Скрыть в стилях -->
-            <div class="reasons-description">
-                <h4 class="reasons-decription-title">Небольшая площадь</h4>
-                <span class="reasons-description-number">&#8212; &#8470;3 &#8212;</span>
-                <p class="reasons-description-text">Все достопримечательности находятся очень близко</p>
-            </div>
-        </section>
+        <section class="secondary-reasons">
+            <section class="secondary-reason">
+                <h3 class="visually-hidden">Третья причина</h3>
+                <div class="reason-description">
+                    <h4 class="reason-title">Небольшая площадь</h4>
+                    <span class="reason-number">&#8212; &#8470;3 &#8212;</span>
+                    <p class="reason-text">Все достопримечательности находятся очень близко</p>
+                </div>
+            </section>
 
-        <section class="reasons-item">
-            <h3 class="visually-hidden">Четвёртая причина</h3>
-            <!-- Скрыть в стилях -->
-            <div class="reasons-description">
-                <h4 class="reasons-decription-title">Красивая дорога</h4>
-                <span class="reasons-description-number">&#8212; &#8470;4 &#8212;</span>
-                <p class="reasons-description-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-            </div>
-        </section>
-
-        <section class="reasons-item">
-            <h3 class="visually-hidden">Пятая причина</h3>
-            <!-- Скрыть в стилях -->
-            <div class="reasons-description">
-                <h4 class="reasons-decription-title">Мало туристов</h4>
-                <span class="reasons-description-number">&#8212; &#8470;5 &#8212;</span>
-                <p class="reasons-description-text">Большинство едет в Гранд Каньон и толптится там</p>
-            </div>
-        </section>
-        <section class="motel-search-form-description">
-            <h3 class="visually-hidden">Описание формы</h3>
-            <!-- Скрыть в стилях -->
-            <p class="motel-search-form-data-choice">Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне </p>
-            <section class="motel-search-form">
-                <h4 class="visually-hidden">Форма гостиниц</h4>
+            <section class="secondary-reason">
+                <h3 class="visually-hidden">Четвёртая причина</h3>
                 <!-- Скрыть в стилях -->
-                <a href="catalog.html">Поиск гостиницы в Седоне</a>
-                <form method="POST" action="http://echo.htmlacademy.ru">
-                    <fieldset class="visually-hidden">
+                <div class="reason-description">
+                    <h4 class="reason-title">Красивая дорога</h4>
+                    <span class="reason-number">&#8212; &#8470;4 &#8212;</span>
+                    <p class="reason-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                </div>
+            </section>
+
+            <section class="secondary-reason">
+                <h3 class="visually-hidden">Пятая причина</h3>
+                <!-- Скрыть в стилях -->
+                <div class="reason-description">
+                    <h4 class="reason-title">Мало туристов</h4>
+                    <span class="reason-number">&#8212; &#8470;5 &#8212;</span>
+                    <p class="reason-text">Большинство едет в Гранд Каньон и толптится там</p>
+                </div>
+            </section>
+        </section>
+
+        <section class="searchform-description">
+            <h2>Заинтерисовались?</h2>
+            <p>Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в Седоне </p>
+            
+            <section class="motel-searchform">
+                <h4 class="visually-hidden">Форма гостиниц</h4>
+
+                <a class="motel-button"href="catalog.html">Поиск гостиницы в Седоне</a>
+
+                <form class="motel-form" method="POST" action="http://echo.htmlacademy.ru">
+                    <fieldset class="motel-fieldset">
                         <legend class="visually-hidden">Бронирование</legend>
-                        <p>
+                        <p class="checkin-field">
                             <label for="in-date">Дата заезда:</label>
-                            <input id="in-date" type="date" name="check-in-date">
+                            <input id="in-date" type="date" name="checkin-date">
                         </p>
 
-                        <p>
+                        <p class="checkout-date">
                             <label for="out-date">Дата выезда:</label>
-                            <input id="out-date" type="date" name="check-out-date">
+                            <input id="out-date" type="date" name="checkout-date">
                         </p>
 
-                        <p>
-                            <button type="button" name="decrement-btn" aria-label="Уменьшить на единичку количество     взрослых">-</button>
-
+                        <p class="adults-field">
                             Взрослые:
+
+                            <button class="decrement-button" type="button" name="decrement-btn" aria-label="Уменьшить на единичку количество     взрослых">-</button>
+
                             <input id="adults" type="number" name="adults-number">
 
-                            <button type="button" name="increment-btn" aria-label="Увеличить на единичку количество     взрослых">+</button>
+                            <button class="increment-button" type="button" name="increment-btn" aria-label="Увеличить на единичку количество     взрослых">+</button>
                         </p>
 
-                        <p>
-                            <button type="button" name="decrement-btn" aria-label="Уменьшить на единичку количество детей">-</button>
-
+                        <p class="kids-field">
                             Дети:
+
+                            <button class="decrement-button" type="button" name="decrement-btn" aria-label="Уменьшить на единичку количество детей">-</button>
+
                             <input id="kids" type="number" name="kids-number">
 
-                            <button type="button" name="increment-btn" aria-label="Увеличить на единичку количество детей">+</button>
+                            <button class="increment-button" type="button" name="increment-btn" aria-label="Увеличить на единичку количество детей">+</button>
                         </p>
-                        <button type="submit">Найти</button>
-
+                        <button class="find-button" type="submit">Найти</button>
                     </fieldset>
-
                 </form>
             </section>
         </section>
@@ -164,30 +168,32 @@
         <section class="map-field">
             <h4 class="visually-hidden">Карта</h4>
 
-            <img class="map-field-image" src="img/map.jpg" width="1718" height="748" alt="Карта">
+            <img class="map-field-img" src="img/map.jpg" width="1718" height="748" alt="Карта">
         </section>
     </main>
 
     <footer class="footer">
-            <div class="visit-sedona-wrapper">
-                <a href="#">#VisitSedona</a>
-            </div>
+        <div class="visitsedona-wrapper">
+            <a href="#">#VisitSedona</a>
+        </div>
 
-
-            <ul class="links-list">
-                <li class="links-item">
-                    <a class="vk-page" href="#">VK</a>
-                </li>
-                <li class="links-item">
-                    <a class="fb-page" href="#">FB</a>
-                </li>
-                <li class="links-item">
-                    <a class="yt-channel" href="#">Youtube</a>
-                </li>
-            </ul>
-            <div class="website-creator">
-                <p>Website by</p>
-            </div>
+        <ul class="links-list">
+            <li class="links-item">
+                <a class="links-button button-vk" href="#">VK</a>
+            </li>
+            <li class="links-item">
+                <a class="links-button button-fb" href="#">FB</a>
+            </li>
+            <li class="links-item">
+                <a class="links-button button-yt" href="#">YT</a>
+            </li>
+        </ul>
+        <div class="website-creator">
+            <p class="creator-field">
+                Website by
+                <a class="accademy-button" href="https://htmlacademy.ru/"></a>
+            </p>
+        </div>
     </footer>
 
     <script src="js/script.js"></script>
