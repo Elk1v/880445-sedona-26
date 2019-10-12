@@ -1,11 +1,19 @@
 @font-face{
 	font-family: PT Sans;
 	src: url("../fonts/ptsans.woff") format("woff"),
-		 url("../fonts/ptsansbold.woff") format("woff"),
-		 url("../fonts/ptsans.woff2") format("woff2"),
-		 url("../fonts/ptsansbold.woff2") format("woff2");
-	font-weight: normal;
+         url("../fonts/ptsans.woff2") format("woff2");
+    font-weight: 400;
 	font-style: normal;
+ }
+
+
+@font-face{
+	font-family: PT Sans;
+	src: url("../fonts/ptsansbold.woff") format("woff"),  
+         url("../fonts/ptsansbold.woff2") format("woff2");
+    font-weight: 700;
+	font-style: normal;
+
 }
 
 
@@ -18,7 +26,6 @@
 body{
 	margin: 0;
 	padding: 0;
-
 	font-family: "PT Sans", Arial, sans-serif;
 	font-size: 14px;
 	line-height: 26px;
@@ -30,8 +37,23 @@ body{
 }
 
 
-.header{}/* Не используемые селекторы удалить потом */
-.header .logo{}
+
+.header{
+	width: 1200px;
+	display: flex;
+	margin: 0 auto;
+
+	box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+/* Не используемые селекторы удалить потом */
+
+
+.header .logo{
+	width: 140px;	
+	height: 82px;	
+}
+
 .header .nav{}
 
 
@@ -62,12 +84,24 @@ body{
 	color: #766357;
 }
 
-.main{}
+.main{
+	width: 1200px;
+	margin: 0 auto;
+
+	box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
 
 .main .intro{
+	width: 1200px;
+	min-height: 744px;/*Пересмотреть в будущем*/
 	background-color: #81b3d2;
 	background-image: url("../img/background photo.jpg");
 	background-repeat: no-repeat;
+}
+
+.intro img{
+	display: block;
+	margin: 0 auto;
 }
 
 
@@ -79,6 +113,7 @@ body{
 
 
 .sedona-description .description-text{
+	margin-bottom: 56px;
 	text-align: center;
 	color: #333333;
 	font-weight: 400;
@@ -86,30 +121,47 @@ body{
 
 
 .primary-reason {
+	display: flex;
 	background-color: #81b3d2;
 }
 
 
-.primary-reason  .reason-title{
+.change-order{
+	order: 1;
+}
+
+
+.primary-reason .reason-image{
+
+}
+
+
+
+.reason-description  .reason-title{
 	color: #ffffff;
+	text-align: center;
 	font-size: 21px;
 	font-weight: 700;
 }
 
 
-.primary-reason .reason-number,
-.primary-reason .reason-text{
+.reason-description .reason-number,
+.reason-description .reason-text{
 	color: #ffffff;
+	text-align: center;
 	font-size: 14px;
 	font-weight: 400;
 }
 
 
 .advantages{
-	background-color: #eeeeee;
+	display: flex;
+	justify-content: space-between;
+	background-color: #ffffff;
 }
 
 .advantages-item h4{
+	text-align: center;
 	font-size: 21px;
 	font-weight: 700;
 		
@@ -123,17 +175,26 @@ body{
 }
 
 .secondary-reasons{
+	display: flex;
+	justify-content: space-between;
 	background-color: #eeeeee;
 }
 
+.secondary-reason{
+
+}
+
 .secondary-reason .reason-title{
+	color: #000000;
+	text-align: center;
 	font-size: 21px;
 	font-weight: 700;
 }
 
 .secondary-reason .reason-number,
-.secondary-reason .reasons-text{
+.secondary-reason .reason-text{
 	color: #333333;
+	text-align: center;
 	font-size: 14px;
 	font-weight: 400;
 	line-height: 21px;
@@ -162,10 +223,23 @@ body{
 	line-height: 24px;
 }
 
+.motel-searchform{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+
 .motel-searchform .motel-button{
-	width: 568px;
-	height: 86px;
-	display: inline-block;
+	width: 289px;
+	height: 18px;
+
+	padding-top: 35px;
+	padding-right: 139px;
+	padding-bottom: 33px;
+	padding-left: 140px;
+
+	display: block;
 	text-align: center;
 
 	color: #ffffff;
@@ -190,6 +264,46 @@ body{
 
 .motel-form{
 
+}
+
+.motel-fieldset{
+	border: none;
+	box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
+
+.motel-fieldset p{
+
+	color: #000000;
+	font-size: 14px;
+	font-weight: 700;
+	line-height: 26px;
+}
+
+
+.motel-fieldset .find-button{
+	width: 458px;
+	height: 58px;
+
+	color: #ffffff;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 26px;
+	text-transform: uppercase;
+
+	background-color: #81b3d2;
+	border: none;
+}
+
+
+.motel-fieldset .find-button:hover{
+	background-color: #669ec0;
+}
+
+
+.motel-fieldset .find-button:active{
+	opacity: 0.3;
+
+	background-color: #5496bd;
 }
 
 .motel-form input[type="date"]{
@@ -240,46 +354,27 @@ body{
 }
 
 
-.motel-fieldset p{
 
-	color: #000000;
-	font-size: 14px;
-	font-weight: 700;
-	line-height: 26px;
+
+.map-field{
+
+	width: 1200px;
+	height: 473px;
+	background-image: url("../img/map.jpg");
+	background-repeat: no-repeat;
+	background-color: #fefefe;
 }
 
 
-.motel-fieldset .find-button{
-	width: 458px;
-	height: 58px;
+.footer{
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
 
-	color: #ffffff;
-	font-size: 21px;
-	font-weight: 700;
-	line-height: 26px;
-	text-transform: uppercase;
+	box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 
-	background-color: #81b3d2;
-	border: none;
 }
-
-
-.motel-fieldset .find-button:hover{
-	background-color: #669ec0;
-}
-
-
-.motel-fieldset .find-button:active{
-	opacity: 0.3;
-
-	background-color: #5496bd;
-}
-
-
-.map-field{}
-
-
-.footer{}
 
 
 .visitsedona-wrapper a{
@@ -328,9 +423,9 @@ body{
 }
 
 
-.creator-field .accademt-button{}
-.creator-field .accademt-button:hover{}
-.creator-field .accademt-button:active{}
+.creator-field .accademy-button{}
+.creator-field .accademy-button:hover{}
+.creator-field .accademy-button:active{}
 
 
 
@@ -355,7 +450,7 @@ body{
 .booksection .bookform{}
 
 
-.book-form. .bookform-wrapper{}
+.book-form .bookform-wrapper{}
 
 
 .bookform-wrapper .bookform-title{
@@ -597,7 +692,7 @@ body{
 }
 
 
-.rate-wrapper
+.rate-wrapper{}
 
 .rate{
 
